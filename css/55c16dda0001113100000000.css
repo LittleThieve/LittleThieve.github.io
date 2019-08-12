@@ -310,7 +310,8 @@
 }
 
 .logo {
-    width: 385px;
+    width: 40%;
+    text-align:center;
     height: 81px;
     /*background-image: url(../images/55ade2110001708401850081.png);*/
     font-family:微软雅黑;
