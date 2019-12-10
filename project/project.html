@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- 设置视口 -->
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<!--  
+		width    设置viewport宽度，为一个正整数，或字符串‘device-width’
+		height   设置viewport高度，一般设置了宽度，会自动解析出高度，可以不用设置
+		initial-scale    默认缩放比例，为一个数字，可以带小数
+		minimum-scale    允许用户最小缩放比例，为一个数字，可以带小数
+		maximum-scale    允许用户最大缩放比例，为一个数字，可以带小数
+		user-scalable    是否允许手动缩放 -->
+		<title>project</title>
+		<script src="./js/project.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/project.css"/>
+	</head>
+	<body>
+		
+		<div id="box">
+			<!-- 第一个效果开始 -->
+			<div id="first">
+				<div id="img1"></div>
+				<div id="img2"></div>
+				<div id="img3"></div>
+				<div id="text">
+					<p>LOADING</p>
+					<p class="dot">
+						<span>.</span>
+						<span>.</span>
+						<span>.</span>
+					</p>
+					<p>
+						<span id="precent">	
+						</span>
+						%
+					</p>
+				</div>
+			</div>
+			<!-- 第二个页面效果 -->
+			<div id="two">
+				<!-- 音乐图标 -->
+				<div id="music">
+				</div>
+				<audio src="./music/bgm.mp3" autoplay="autoplay" loop id="audio">
+					当前浏览器不支持audio
+				</audio>
+				<!-- 东坡肉文字 -->
+				<div id="meat_text">
+				</div>
+				<!-- 美食文字 -->
+				<div id="foot">
+				</div>
+				<!-- 东坡肉 -->
+				<div id="meat">
+				</div>
+				<!-- 圆 -->
+				<div id="circle1">
+				</div>
+				<div id="circle2">
+				</div>
+				<!-- 第二个圆圈的食物图片 -->
+				<div id="bj_div">
+					<!-- <div >
+					</div> -->
+					<img src="./images/P2/八角.png" id="bj">
+				</div>
+				<div id="bt_div">
+					<img src="./images/P2/冰糖.png" id="bt">
+				</div>
+				
+				<div id="pig_div">
+					<div id="pig">
+					</div>
+					<img src="./images/P2/猪肉.png" id="pig">
+				</div>
+				
+				<div id="hj_div">
+					<img src="./images/P2/黄酒.png" id="hj">
+				</div>
+				
+				<div id="circle3">
+				</div>
+				<!-- 第二个圆圈的食物图片 -->
+				<div id="jc_div">
+					<img src="./images/P2/姜葱.png" id="jc">
+				</div>
+				<div id="circle4">
+				</div>
+				<!-- 了解做法 -->
+				<div id="text">
+					<p>了解做法</p>
+					<img src="./images/P2/滑动箭头.png" >
+				</div>
+			</div>
+		</div>
+	</body>
+	
+</html>
