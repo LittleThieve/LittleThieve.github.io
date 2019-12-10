@@ -21,7 +21,7 @@ window.onload= function(){
 	var audio = document.getElementById("audio");
 	// 计数
 	var count = 0;
-	music.onclick = function(){
+	music.ontouchstart = function(){
 		count++;
 		// 如果为基数表示停止，偶数为旋转播放
 		if(count%2 !=0){
