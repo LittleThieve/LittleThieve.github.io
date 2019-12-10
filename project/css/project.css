@@ -1,0 +1,285 @@
+/* 公告样式 */
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+/* 第一张效果图css */
+#box{
+	width: 100%;
+	height: 640px;
+}
+#first{
+	width: 100%;
+	height:100%;
+	margin:0 auto;
+	background: url(../images/P1/loading.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+/* 创建动画  获取三缕烟状物，以中、右、左的顺序出现、变小、消失，并且循环； */
+@keyframes yan{
+	from{
+		opacity: 1;
+		background-size: 100% 100%;
+	}
+	to{
+		opacity: 0;
+		background-size: 55% 55%;
+	}
+}
+#first #img1{
+	opacity: 0;
+	width: 37px;
+	height: 152px;
+	background: url(../images/P1/中气体.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top:21%;
+	left:47%;
+	animation: yan 1s infinite linear;
+}
+#first #img2{
+	opacity: 0;
+	width: 15px;
+	height: 66px;
+	background: url(../images/P1/右气体.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top:35%;
+	right:31%;
+	animation: yan 1s 1s infinite linear;
+}
+#first #img3{
+	opacity: 0;
+	width: 23px;
+	height: 97px;
+	background: url(../images/P1/左气体.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top:31%;
+	left:35%;
+	animation: yan 1s 2s infinite linear;
+}
+#first #text{
+	color: #795548;
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	font-weight: bolder;
+	position: absolute;
+	bottom:29%;
+	left:50%;
+	transform:translateX(-45%);
+}
+#first #text p:nth-child(1){
+	display: inline-block;
+}
+#first #text p:nth-child(2){
+	display: inline-block;
+}
+/* .loaidng...后面三个点依次出现（循环）； */
+@keyframes dot{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+#text .dot span:nth-child(1){
+	animation: dot 1s infinite linear;
+}
+#text .dot span:nth-child(2){
+	animation: dot 1s 1s infinite linear;
+}
+#text .dot span:nth-child(3){
+	animation: dot 1s 2s infinite linear;
+}
+/* 第二个页面 */
+#two{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background:url("../images/P2/背景.png") no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+#two #music{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top:2%;
+	right: 4%;
+	background: url(../images/P2/音乐图标.png) no-repeat;
+	transform-origin: center;
+	animation:rotate 5s linear infinite;
+}
+#two #meat_text{
+	width:96px;
+	height: 113px;
+	position: absolute;
+	top:5%;
+	left: 40%;
+	background: url(../images/P2/logo.png) no-repeat;
+	background-size: 50% 50%;
+}
+#two #foot{
+	width:264px;
+	height: 104px;
+	position: absolute;
+	top:20%;
+	left: 17%;
+	background: url(../images/P2/文字.png) no-repeat;
+	background-size: 50% 50%;
+}
+#two #meat{
+	z-index: 9999;
+	width:574px;
+	height: 409px;
+	position: absolute;
+	top:40%;
+	left: 46%;
+	background: url(../images/P2/东坡肉.png) no-repeat;
+	background-size: 45% 45%;
+}
+#two #circle1{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top:32%;
+	right: -50%;
+	border:1px dashed #795548;
+	border-radius: 150px;
+	border-width: 2px;
+}
+#two #circle2{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top:24%;
+	right: -57%;
+	border:1px dashed #795548;
+	border-radius:200px;
+	border-width: 2px;
+}
+#two #circle3{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top:16%;
+	right: -64%;
+	border:1px dashed #795548;
+	border-radius:250px;
+}
+#two #circle4{
+	width: 700px;
+	height: 700px;
+	position: absolute;
+	top:-4%;
+	right: -100%;
+	border:1px dashed #795548;
+	border-radius:350px;
+}
+#two #text{
+	color: #795548;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bolder;
+	position: absolute;
+	bottom:2%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#two #text>img{
+	margin-top: 5px;
+	width: 25px;
+	height: 16px;
+}
+/* 公转效果 */
+@keyframes rotate {   
+    100% {   
+        transform: rotate(360deg);   
+    }   
+}
+#two #bj_div{
+	width:574px;
+	height: 409px;
+	position: absolute;
+	top:40%;
+	left: 42%;
+	transform-origin:42% 25.2%;
+	animation:rotate 10s infinite linear;
+}
+#two #bj{
+	width:50px;
+	height:50px;
+	transform-origin: center;
+	animation:rotate 5s infinite linear;
+}
+#two #bt_div{
+	width:574px;
+	height: 409px;
+	position: absolute;
+	top:67%;
+	left: 45%;
+	animation:rotate 10s infinite linear;
+	transform-origin: 38% -18%;
+}
+#two #bt{
+	width:50px;
+	height:50px;
+	transform-origin: center;
+	animation:rotate 5s infinite linear;
+}
+#two #pig_div{
+	width:574px;
+	height: 409px;
+	position: absolute;
+	top:21%;
+	left: 60%;
+	animation:rotate 10s infinite linear;
+	transform-origin: 28% 57%;
+}
+#two #pig{
+	width:50px;
+	height:50px;
+	transform-origin: center;
+	animation:rotate 5s infinite linear;
+}
+#two #hj_div{
+	width:200px;
+	height: 200px;
+	position: absolute;
+	top:81%;
+	left: 76%;
+	animation:rotate 10s infinite linear; 
+	transform-origin: 38% -80%;
+}
+#two #hj{
+	width:50px;
+	height:50px;
+	transform-origin: center;
+	animation:rotate 5s infinite linear;	
+}
+#two #jc_div{
+	width:200px;
+	height: 200px;
+	position: absolute;
+	top:81%;
+	left: 44%;
+	animation:rotate 10s infinite linear;
+	transform-origin: 80% -85%;
+}
+#two #jc{
+	width:50px;
+	height:50px;
+	transform-origin: center;
+	animation:rotate 5s infinite linear;
+}
