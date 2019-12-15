@@ -1,0 +1,43 @@
+#page3{
+	background:url(../img/p4/page4.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.middle1{
+	width:22px;
+	height: 100px;
+	position: absolute;
+	top:54%;
+	left: 45%;
+	animation:qitis 2s linear infinite;
+}
+.left1{
+	width: 18px;
+	height: 70px;
+	position: absolute;
+	top:58%;
+	left: 36%;
+	animation:qitis 2s linear 1.5s infinite;
+}
+.right1{
+	width: 12px;
+	height: 48px;
+	position: absolute;
+	top:58%;
+	left: 56%;
+	animation:qitis 2s linear 3s infinite;
+}
+@keyframes qitis{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+		transform: matrix(.6,0,0,.8,1.6,2.4);
+	}
+	100%{
+		opacity: 0;
+		transform: matrix(0,0,0,0,0,0);
+		/*transform: scale(0.5);*/
+	}
+}

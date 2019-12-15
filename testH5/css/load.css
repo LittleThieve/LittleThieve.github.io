@@ -1,0 +1,112 @@
+#load{
+	display: none;
+}
+.bg{
+	width: 100%;
+	height: 100%;
+	background: url(../img/p1/bg.png) no-repeat;
+	background-size: 100% 110%;
+	background-position-y: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.one{
+	width: 200px;
+	height: 140px;
+	background: url(../img/p1/meat.png) no-repeat;
+	background-size:100%;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	margin-right: -100px;
+	margin-top: -70px;
+}
+.right{
+	width:12px;
+	height: 40px;
+	position: absolute;
+	top:-25% ;
+	right: 30%;
+	animation:qiti 2s linear 1.5s infinite;
+}
+.middle{
+	width: 20px;
+	height:80px;
+	position: absolute;
+	top:-58% ;
+	right: 50%;
+	animation:qiti 2s linear infinite;
+}
+.left{
+	width: 14px;
+	height: 50px;
+	position: absolute;
+	top:-28% ;
+	right: 72%;
+	animation:qiti 2s linear 3s infinite;
+}
+@keyframes qiti{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+		transform: matrix(.6,0,0,.8,1.6,2.4);
+	}
+	100%{
+		opacity: 0;
+		transform: matrix(0,0,0,0,0,0);
+		/*transform: scale(0.5);*/
+	}
+}
+.font{
+	width: 100px;
+	text-align: center;
+	height: 22px;
+	line-height: 22px;
+	position: absolute;
+	bottom:-20% ;
+	right: 50%;
+	margin-right: -68px;
+	font-family: "加载";
+	color: #782110;
+}
+@font-face {
+	font-family:"加载";
+	src: url(../font/font.otf);
+}
+.percent{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom:-35% ;
+	right: 50%;
+	margin-right: -10px;
+	font-family: "加载";
+	color: #782110;
+}
+.bg #loading #load{
+	width: 20px;
+	height: 22px;
+	display: inline-block;
+}
+#music{
+	position: fixed;
+	display: none;
+	z-index: 99999;	
+	top:2%;
+	right:4% ;
+}
+#music1{
+	/*width: 25px;
+	height: 25px;	*/
+	animation: tubiao 3s linear infinite;
+}
+@keyframes tubiao{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
