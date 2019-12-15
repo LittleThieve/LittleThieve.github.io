@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<title>东</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/1.css">
+		<link rel="stylesheet" href="css/2.css">
+		<link rel="stylesheet" href="css/3.css">
+		<!--<link rel="stylesheet" href="css/4.css">-->
+		<link rel="stylesheet" type="text/css" href="css/load.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<!--音乐图标-->
+			<div class="music" id="music">
+				<img src="img/common/music.png"/  id="music1">
+				<audio src="media/bgm.mp3" autoplay="autoplay" loop="loop"  id="media"></audio>
+			</div>
+			<!--加载页-->
+			<div class="bg" id="bg">
+				<div class="one">
+					<img src="img/p1/middle.png"/class="middle"/>
+					<img src="img/p1/left.png" /class="left"/>
+					<img src="img/p1/right.png" alt="" class="right"/>
+					<div id="loading">
+						<p class="font"><span>LOADING</span><span id="load"></span></p>
+						<span class="percent"><span id="cent"></span>%</span>
+					</div>
+				</div>
+			</div>
+
+			<!--主内容页-->
+			<div class="content" id="content">
+				<!--第一页-->
+				<div class="page" id="page1">
+					<div class="circle">		
+						<img src="img/common/logo.png"/ class="rou">
+						<div class="fonts"><s>|</s>聊美食<br />我是专业的</div>
+						<div class="lastfont">了解做法
+							<img src="img/common/silace.png"/ class="slice">
+						</div>			
+						<div class="bigcircle">
+							<img src="img/p2/cheer.png" alt="" />
+							<img src="img/p2/jiao.png"/>
+							<img src="img/p2/meat.png"/>
+							<img src="img/p2/onion.png" alt="" />
+						</div>
+						<img src="img/p1/meat.png" alt="" class="meat"/>
+					</div>
+				</div>
+				<!--第二页-->
+				<div class="page" id="page2">
+					<ul>
+						<li>
+							<img src="img/p3/meat.png" alt=""  id="img1" class="cur"/>
+						</li>
+						<li>
+							<img src="img/p3/sugar.png" alt=""  id="img2"/>
+						<li>
+							<img src="img/p3/onion.png" alt="" id="img3"/>
+						</li>
+						</li>
+					</ul>
+				</div>
+				<div class="page" id="page3">
+					<img src="img/p4/left.png" alt="" class="left1"/>
+					<img src="img/p4/middle.png" alt="" class="middle1"/>
+					<img src="img/p4/right.png" alt="" class="right1"/>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>
