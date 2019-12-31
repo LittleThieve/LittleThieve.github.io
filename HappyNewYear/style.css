@@ -1,0 +1,483 @@
+                                                        /* all tag */
+                                                    
+                                                    * {
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        border: none;
+                                                        font-size: 1.5625vw;
+                                                        font-family: "Microsoft Yahei";
+                                                    }
+                                                    
+                                                    html,
+                                                    body {
+                                                        height: 100%;
+                                                        overflow: hidden;
+                                                    }
+                                                    /* music */
+                                                    
+                                                    .music {
+                                                        width: 15vw;
+                                                        height: 15vw;
+                                                        border: 4px solid #ef1639;
+                                                        position: fixed;
+                                                        top: 3vh;
+                                                        right: 4vw;
+                                                        z-index: 5;
+                                                        border-radius: 50%;
+                                                        background-color: #fff;
+                                                    }
+                                                    
+                                                    .music>img:first-of-type {
+                                                        position: absolute;
+                                                        top: 24%;
+                                                        right: 2.5%;
+                                                        width: 28.421%;
+                                                        z-index: 1;
+                                                    }
+                                                    
+                                                    .music>img:last-of-type {
+                                                        width: 79%;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        right: 0;
+                                                        bottom: 0;
+                                                        left: 0;
+                                                        z-index: 0;
+                                                        margin: auto;
+                                                        border-radius: 50%;
+                                                    }
+                                                    
+                                                    .music>img.play {
+                                                        animation: music_disc 4s linear infinite;
+                                                        -webkit-animation: music_disc 4s linear infinite;
+                                                    }
+                                                    
+                                                    @keyframes music_disc {
+                                                        0% {
+                                                            transform: rotate(0deg);
+                                                            -webkit-animation: rotate(0deg);
+                                                        }
+                                                        100% {
+                                                            transform: rotate(360deg);
+                                                            -webkit-animation: rotate(360deg);
+                                                        }
+                                                    }
+                                                    
+                                                    @-webkit-keyframes music_disc {
+                                                        0% {
+                                                            transform: rotate(0deg);
+                                                            -webkit-animation: rotate(0deg);
+                                                        }
+                                                        100% {
+                                                            transform: rotate(360deg);
+                                                            -webkit-animation: rotate(360deg);
+                                                        }
+                                                    }
+                                                    /* page bg */
+                                                    
+                                                    .page {
+                                                        height: 100%;
+                                                        position: relative;
+                                                    }
+                                                    
+                                                    .page>.bg {
+                                                        height: 100%;
+                                                        width: 100%;
+                                                        position: absolute;
+                                                        z-index: -1;
+                                                    }
+                                                    /* page1 */
+                                                    
+                                                    #page1 {
+                                                        display: block;
+                                                    }
+                                                    
+                                                    #page1>.bg {
+                                                        background: url(img/p1_bg.jpg) no-repeat center center;
+                                                        background-size: 100%;
+                                                    }
+                                                    
+                                                    #page1>.p1_lantern {
+                                                        width: 45vw;
+                                                        height: 71.2vh;
+                                                        font-size: 3.506rem;
+                                                        position: absolute;
+                                                        top: -3.4%;
+                                                        right: 0;
+                                                        left: 0;
+                                                        margin: auto;
+                                                        background: url("img/p1_lantern.png") no-repeat center bottom;
+                                                        background-size: 100%;
+                                                        padding-top: 31vh;
+                                                        text-align: center;
+                                                        -webkit-box-sizing: border-box;
+                                                        -moz-box-sizing: border-box;
+                                                        -ms-box-sizing: border-box;
+                                                        -o-box-sizing: border-box;
+                                                        box-sizing: border-box;
+                                                        color: #fff;
+                                                    }
+                                                    
+                                                    #page1>.p1_lantern:before {
+                                                        position: absolute;
+                                                        top: 0%;
+                                                        right: 0;
+                                                        bottom: 0;
+                                                        left: 0;
+                                                        margin: auto;
+                                                        width: 30vw;
+                                                        height: 30vw;
+                                                        z-index: -1;
+                                                        content: "";
+                                                        /* 对于伪类来说一定要有东西 */
+                                                        background: #C31212;
+                                                        border-radius: 50%;
+                                                        opacity: 0.5;
+                                                        -webkit-box-shadow: 0 0 10vw 10vw #C31212;
+                                                        -moz-box-shadow: 0 0 10vw 10vw #C31212;
+                                                        -ms-box-shadow: 0 0 10vw 10vw #C31212;
+                                                        -o-box-shadow: 0 0 10vw 10vw #C31212;
+                                                        box-shadow: 0 0 10vw 10vw #C31212;
+                                                        -webkit-animation: p1_lantern 0.5s infinite alternate;
+                                                        animation: p1_lantern 0.5s infinite alternate;
+                                                    }
+                                                    
+                                                    @keyframes p1_lantern {
+                                                        0% {
+                                                            opacity: 0.5;
+                                                            transform: scale(0.8, 0.8);
+                                                            -webkit-transform: scale(0.8, 0.8);
+                                                        }
+                                                        100% {
+                                                            opacity: 1;
+                                                        }
+                                                    }
+                                                    
+                                                    @-webkit-keyframes p1_lantern {
+                                                        0% {
+                                                            opacity: 0.5;
+                                                            transform: scale(0.8, 0.8);
+                                                            -webkit-transform: scale(0.8, 0.8);
+                                                        }
+                                                        100% {
+                                                            opacity: 1;
+                                                        }
+                                                    }
+                                                    
+                                                    #page1>.p1_imooc {
+                                                        position: absolute;
+                                                        right: 0;
+                                                        left: 0;
+                                                        bottom: 9vh;
+                                                        background: url("img/thief.jpg") no-repeat center center;
+                                                        background-size: 50%;
+                                                        width: 27.656vw;
+                                                        height: 18.63vh;
+                                                        margin: auto;
+                                                    }
+                                                    
+                                                    #page1>.p1_words {
+                                                        font-size: 2.134rem;
+                                                        position: absolute;
+                                                        right: 0;
+                                                        bottom: 3%;
+                                                        left: 0;
+                                                        text-align: center;
+                                                        color: #231815;
+                                                    }
+                                                    /* page2 */
+                                                    
+                                                    #page2>.p2_bg_loading {
+                                                        z-index: 4;
+                                                        background: #ef1639;
+                                                        animation: p2_bg_loading 1s linear forwards;
+                                                        -webkit-animation: p2_bg_loading 1s linear forwards;
+                                                    }
+                                                    
+                                                    @keyframes p2_bg_loading {
+                                                        0% {
+                                                            opacity: 1;
+                                                        }
+                                                        100% {
+                                                            opacity: 0;
+                                                        }
+                                                    }
+                                                    
+                                                    @-webkit-keyframes p2_bg_loading {
+                                                        0% {
+                                                            opacity: 1;
+                                                        }
+                                                        100% {
+                                                            opacity: 0;
+                                                        }
+                                                    }
+                                                    
+                                                    #page2.fadeOut {
+                                                        opacity: 0.3;
+                                                        transform: translate(0, -100%);
+                                                        -webkit-transform: translate(0, -100%);
+                                                    }
+                                                    
+                                                    #page2 {
+                                                        transition: 0.5s;
+                                                        -webkit-transition: 0.5s;
+                                                        display: none;
+                                                    }
+                                                    
+                                                    #page2>.bg {
+                                                        background: url(img/p2_bg.jpg) no-repeat center center;
+                                                        background-size: cover;
+                                                    }
+                                                    
+                                                    #page2>.p2_circle {
+                                                        position: absolute;
+                                                        top: 0;
+                                                        right: 0;
+                                                        bottom: 0;
+                                                        left: 0;
+                                                        margin: auto;
+                                                        content: "";
+                                                        background: url("img/p2_circle_outer.png") no-repeat center center;
+                                                        width: 59.375vw;
+                                                        height: 59.375vw;
+                                                        background-size: cover;
+                                                        animation: p2_circle_outer 1s linear 3s infinite;
+                                                        -webkit-animation: p2_circle_outer 1s linear 3s infinite;
+                                                    }
+                                                    
+                                                    @keyframes p2_circle_outer {
+                                                        0% {
+                                                            transform: rotate(0deg);
+                                                            -webkit-transform: rotate(0deg);
+                                                        }
+                                                        100% {
+                                                            transform: rotate(-360deg);
+                                                            -webkit-transform: rotate(-360deg);
+                                                        }
+                                                    }
+                                                    
+                                                    @-webkit-keyframes p2_circle_outer {
+                                                        0% {
+                                                            transform: rotate(0deg);
+                                                            -webkit-transform: rotate(0deg);
+                                                        }
+                                                        100% {
+                                                            transform: rotate(-360deg);
+                                                            -webkit-transform: rotate(-360deg);
+                                                        }
+                                                    }
+                                                    
+                                                    #page2>.p2_circle:before {
+                                                        position: absolute;
+                                                        top: 0;
+                                                        right: 0;
+                                                        bottom: 0;
+                                                        left: 0;
+                                                        margin: auto;
+                                                        content: "";
+                                                        background: url("img/p2_circle_middle.png") no-repeat center center;
+                                                        width: 45.625vw;
+                                                        height: 45.625vw;
+                                                        background-size: cover;
+                                                        animation: p2_circle_middle 1s linear 2s infinite;
+                                                        -webkit-animation: p2_circle_middle 1s linear 2s infinite;
+                                                    }
+                                                    
+                                                    @keyframes p2_circle_middle {
+                                                        0% {
+                                                            transform: rotate(0deg);
+                                                            -webkit-transform: rotate(0deg);
+                                                        }
+                                                        100% {
+                                                            transform: rotate(720deg);
+                                                            -webkit-transform: rotate(720deg);
+                                                        }
+                                                    }
+                                                    
+                                                    @-webkit-keyframes p2_circle_middle {
+                                                        0% {
+                                                            transform: rotate(0deg);
+                                                            -webkit-transform: rotate(0deg);
+                                                        }
+                                                        100% {
+                                                            transform: rotate(720deg);
+                                                            -webkit-transform: rotate(720deg);
+                                                        }
+                                                    }
+                                                    
+                                                    #page2>.p2_circle:after {
+                                                        position: absolute;
+                                                        top: 0;
+                                                        right: 0;
+                                                        bottom: 0;
+                                                        left: 0;
+                                                        margin: auto;
+                                                        content: "";
+                                                        background: url("img/p2_circle_inner.png") no-repeat center center;
+                                                        width: 39.937vw;
+                                                        height: 39.937vw;
+                                                        background-size: cover;
+                                                        animation: p2_circle_inner 1s linear 1s infinite;
+                                                        -webkit-animation: p2_circle_inner 1s linear 1s infinite;
+                                                    }
+                                                    
+                                                    @keyframes p2_circle_inner {
+                                                        0% {
+                                                            transform: rotate(0deg);
+                                                            -webkit-transform: rotate(0deg);
+                                                        }
+                                                        100% {
+                                                            transform: rotate(-1080deg);
+                                                            -webkit-transform: rotate(-1080deg);
+                                                        }
+                                                    }
+                                                    
+                                                    @-webkit-keyframes p2_circle_inner {
+                                                        0% {
+                                                            transform: rotate(0deg);
+                                                            -webkit-transform: rotate(0deg);
+                                                        }
+                                                        100% {
+                                                            transform: rotate(-1080deg);
+                                                            -webkit-transform: rotate(-1080deg);
+                                                        }
+                                                    }
+                                                    
+                                                    #page2>.p2_2017 {
+                                                        position: absolute;
+                                                        top: 0;
+                                                        right: 0;
+                                                        bottom: 0;
+                                                        left: 0;
+                                                        margin: auto;
+                                                        background: url(img/p2_2017.png) no-repeat center center;
+                                                        width: 27.5vw;
+                                                        height: 6.24vh;
+                                                        background-size: cover;
+                                                    }
+                                                    /* page3 */
+                                                    
+                                                    #page3 {
+                                                        display: none;
+                                                        transition: 0.5s;
+                                                        -webkit-transition: 0.5s;
+                                                    }
+                                                    
+                                                    #page3.fadeIn {
+                                                        transform: translate(0, -100%);
+                                                        -webkit-transform: translate(0, -100%);
+                                                    }
+                                                    
+                                                    #page3>.bg {
+                                                        background: url(img/p3_bg.jpg) no-repeat center center;
+                                                        background-size: cover;
+                                                    }
+                                                    
+                                                    #page3>.p3_logo {
+                                                        width: 57.6875vw;
+                                                        height: 13.327vh;
+                                                        position: absolute;
+                                                        top: 3.82vh;
+                                                        left: -33px;
+                                                        right: 0;
+                                                        margin: auto;
+                                                        background: url(img/jack.png) no-repeat center center;
+                                                        background-size: 100%;
+                                                    }
+                                                    
+                                                    #page3>.p3_title {
+                                                        width: 48.125vw;
+                                                        height: 50vh;
+                                                        position: absolute;
+                                                        top: 21vh;
+                                                        right: 0;
+                                                        left: 0;
+                                                        margin: auto;
+                                                        background: url(img/happy.png) no-repeat center center;
+                                                        background-size: cover;
+                                                    }
+                                                    
+                                                    #page3>.p3_second {
+                                                        width: 22.8125vw;
+                                                        height: 41.652vh;
+                                                        position: absolute;
+                                                        top: 25.48vh;
+                                                        left: 3.75vw;
+                                                        margin: auto;
+                                                        background: url(img/p3_couplet_second.png) no-repeat center center;
+                                                        background-size: cover;
+                                                        animation: p3_logo 2s linear 7s;
+                                                        -webkit-animation: p3_logo 2s linear 7s;
+                                                        animation-fill-mode: forwards;
+                                                    }
+                                                    
+                                                    @keyframes p3_logo {
+                                                        0% {
+                                                            transform: scale(1, 1);
+                                                            -webkit-transform: scale(1, 1);
+                                                        }
+                                                        100% {
+                                                            transform: scale(1.1, 1.1);
+                                                            -webkit-transform: scale(1.1, 1.1);
+                                                        }
+                                                    }
+                                                    
+                                                    #page3>.p3_first {
+                                                        width: 22.8125vw;
+                                                        height: 41.652vh;
+                                                        position: absolute;
+                                                        top: 25.48vh;
+                                                        right: 3.75vw;
+                                                        background: url(img/p3_couplet_first.png) no-repeat center center;
+                                                        background-size: cover;
+                                                        animation: p3_logo 2s linear 7s;
+                                                        -webkit-animation: p3_logo 2s linear 7s;
+                                                        animation-fill-mode: forwards;
+                                                    }
+                                                    
+                                                    @keyframes p3_logo {
+                                                        0% {
+                                                            transform: scale(1, 1);
+                                                            -webkit-transform: scale(1, 1);
+                                                        }
+                                                        100% {
+                                                            transform: scale(1.1, 1.1);
+                                                            -webkit-transform: scale(1.1, 1.1);
+                                                        }
+                                                    }
+                                                    
+                                                    #page3>.p3_blessing {
+                                                        width: 32vw;
+                                                        height: 32vw;
+                                                        position: absolute;
+                                                        bottom: 10vh;
+                                                        left: 0;
+                                                        right: 0;
+                                                        margin: auto;
+                                                        border-radius: 50%;
+                                                        background: url(img/p3_blessing.png) no-repeat center center;
+                                                        background-size: cover;
+                                                        animation: p3_blessing 2s linear infinite;
+                                                        -webkit-animation: p3_blessing 2s linear infinite;
+                                                    }
+                                                    
+                                                    @keyframes p3_blessing {
+                                                        0% {
+                                                            -webkit-transform: rotate(0deg);
+                                                            transform: rotate(0deg);
+                                                        }
+                                                        100% {
+                                                            -webkit-transform: rotate(720deg);
+                                                            transform: rotate(720deg);
+                                                        }
+                                                    }
+                                                    
+                                                    @-webkit-keyframes p3_blessing {
+                                                        0% {
+                                                            -webkit-transform: rotate(0deg);
+                                                            transform: rotate(0deg);
+                                                        }
+                                                        100% {
+                                                            -webkit-transform: rotate(720deg);
+                                                            transform: rotate(720deg);
+                                                        }
