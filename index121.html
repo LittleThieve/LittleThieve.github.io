@@ -17,7 +17,7 @@
             if (navigator.mediaDevices.getUserMedia === undefined) {
                 navigator.mediaDevices.getUserMedia = function (constraints) {
                     // 首先，如果有getUserMedia的话，就获得它
-                    var getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+                    var getUserMedia = navigator.getUserMedia|navigator.mediaDevices.getUserMedia|navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
 
                     // 一些浏览器根本没实现它 - 那么就返回一个error到promise的reject来保持一个统一的接口
                     if (!getUserMedia) {
