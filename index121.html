@@ -48,7 +48,7 @@
                 v.onloadedmetadata = function (e) {
                     v.play();
                 };
-                let mediaRecorder=newMediaRecorder(stream);
+                let mediaRecorder=new MediaRecorder(stream);
                 mediaRecorder.ondataavailable=function(blob){
                     console.log(blob.data);
                 }
