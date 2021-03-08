@@ -310,19 +310,22 @@
 }
 
 .logo {
-    width: 40%;
-    text-align:center;
+   text-indent: 2em;
+    width: 30%;
+    /* text-align: center; */
     height: 81px;
-    /*background-image: url(../images/55ade2110001708401850081.png);*/
-    font-family:微软雅黑;
-    color: white;
-    font-size: 30px;
+    /* background-image: url(../images/55ade21….png); */
+    font-family: 方正舒体;
+    color: skyblue;
+    font-size: 20px;
     z-index: 999999;
     position: absolute;
-    left: 47%;
-    margin-left: -92.5px;
+    /* left: 47%; */
+    /* margin-left: -92.5px; */
     top: 30px;
-    display: none
+    display: none;
+    /* padding-left: 2em;
+    
 }
 
 .logolightSpeedIn {
